@@ -128,6 +128,37 @@ h1 {
   color: #fff;
 }
 
+/* Mobile-friendly layout for evidence filter buttons */
+@media (max-width: 768px) {
+  .evidence-filter {
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line */
+  }
+
+  .evidence-button {
+    margin-bottom: 10px;
+  }
+
+  .evidence-button img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .evidence-filter {
+    justify-content: center; /* Center buttons on small screens */
+  }
+
+  .evidence-button {
+    margin: 5px; /* Reduce margins between buttons */
+  }
+
+  .evidence-button img {
+    width: 50px; /* Resize icons for smaller screens */
+    height: 50px;
+  }
+}
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   .ghost-list {
